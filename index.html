@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Delivood</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="./img/delivo-logo.png" />
+		<script src="script.js"></script>
+	</head>
+
+	<body onload="startFunction()">
+		<header>
+			<img class="logo" src="img/delivo-logo.png"/>
+			<h1>Delivood</h1>
+		</header>
+		<section id="cart" class="cart">
+			<div class="sticky-div">
+				<h4>Warenkorb</h4>
+				<div id="cart-contents" class="responsive-cart-contents"></div>
+			</div>
+		</section>
+		<img class="food-img" src="img/burger_and_fries.png">
+		<img class="restaurant-logo logo" src="img/burger-logo.png">
+		<h2 class="restaurant-info">Grupsines</h2>
+		<div class="rating-box">
+			<span class="rating-star full-star"></span>
+			<span class="rating-text"><b>4.4</b> (200+)</span>
+		</div>
+		<section class="menu-bar">
+			<p onclick="generateMenu(menus)">Burger</p>
+			<p onclick="generateMenu(sides)">Beilagen</p>
+			<p onclick="generateMenu(desserts)">Nachtisch</p>
+		</section>
+		<section id="menu" class="menu">
+		</section>
+		<footer></footer>
+		<div id="responsive-cart-button" class="responsive-cart-button d-none">
+			<button class="responsive-btn" type="button" onclick="showCart()">Warenkorb</button>
+		</div>
+		<section id="responsive-cart" class="responsive-cart d-none">
+			<h4>Warenkorb</h4>
+		<div class="responsive-cart-button">
+			<button class="responsive-btn" type="button" onclick="hideCart()">Schließen</button>
+		</div>
+			<div id="responsive-cart-contents" class="responsive-cart-contents"></div>
+		</section>
+	</body>
+</html>
